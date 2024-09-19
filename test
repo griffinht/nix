@@ -1,0 +1,20 @@
+
+;;
+					    ;; window manager
+                                            ;;
+
+                                            "wdisplays" ;; gui display configurerer
+                                            "wev" ;; wayland event viewer
+					    ;;;;"sway"
+                                            ;; todo idk if this needs to be installed on system host or can be guix home?
+                                            ;; for now its just installed on arch host with xorg-xwayland or something
+                                            ;"xorg-server-xwayland"
+                                            "swayidle"
+                                            ;;"swaybg" not needed? make sure this is on the host or else weird bugs! todo arch thing
+                                            ;; do not install swaylock to user (setuid needs root) "swaylock" ;; screen locker
+                                            "fzf" ;; application launcher menu
+					    "grim" "slurp" ;; screenshot and screen selection
+					    "mako" ;; notification daemon
+					    "wl-clipboard" ;; needed for neovim clipboard to work https://github.com/neovim/neovim/pull/9229
+                                            "libnotify" ;; provides notify-send to trigger notifications from cli - eg 'notify-send hello there!'
+
